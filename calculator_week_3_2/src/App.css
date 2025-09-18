@@ -1,0 +1,72 @@
+/* 전체 컨테이너 */
+.container {
+  max-width: 320px;
+  margin: 24px auto;
+  text-align: center;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  color: #f5f5f5;             /* 다크 모드 크롬에서도 글자 보이게 */
+}
+
+/* 결과 디스플레이 */
+.display {
+  height: 56px;
+  border: 1px solid #444;
+  background: #111;
+  margin: 8px 0 16px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 12px;
+  border-radius: 8px;
+}
+
+/* 공통 버튼 */
+.btn {
+  width: 64px;
+  height: 56px;
+  margin: 4px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #222;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+.btn:active { transform: translateY(1px); }
+
+/* 키패드 그리드 */
+.keypad {
+  display: grid;
+  grid-template-columns: 1fr 80px; /* 왼쪽 숫자, 오른쪽 연산자 */
+  gap: 8px;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.operators {
+  display: grid;
+  grid-auto-rows: 56px;
+  gap: 8px;
+}
+
+/* 히스토리 */
+.history {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  text-align: left;
+  color: #ddd;
+}
+.history li { margin-bottom: 4px; }
+
+/* 제목 */
+h1 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #eaeaea;
+}
